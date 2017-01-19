@@ -147,4 +147,4 @@ module.exports = [
     emoji: ':page_facing_up:',
     purpose: 'Adding or updating license.'
   }
-]
+];

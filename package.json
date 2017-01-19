@@ -1,14 +1,23 @@
 {
   "name": "git-emojis",
   "version": "0.0.2",
-  "description": "Shows you the all the fancy gitmojis and their meanings",
+  "description": "Shows you the all the fancy git emojis and their meanings",
   "main": "src/index.js",
   "bin": {
     "git-emojis": "./src/index.js"
   },
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest"
+    "test": "xo && jest"
+  },
+  "xo": {
+    "space": true,
+    "fix": true,
+    "globals": [
+      "test",
+      "expect",
+      "toBe"
+    ]
   },
   "repository": {
     "type": "git",
@@ -26,10 +35,12 @@
   },
   "homepage": "https://github.com/hawkins/git-emojis#readme",
   "devDependencies": {
-    "jest": "^18.1.0"
+    "jest": "^18.1.0",
+    "xo": "^0.17.1"
   },
   "dependencies": {
     "chalk": "^1.1.3",
-    "node-emoji": "^1.5.1"
+    "node-emoji": "^1.5.1",
+    "xo": "^0.17.1"
   }
 }
